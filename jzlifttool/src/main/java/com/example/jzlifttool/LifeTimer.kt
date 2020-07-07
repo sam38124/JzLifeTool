@@ -12,11 +12,11 @@ import java.util.*
 import kotlin.concurrent.schedule
 
 class LifeTimer(var life: Lifecycle) {
-    private var timer: Timer = Timer()
-    private var delay=0L
-    private var period=0L
-    private var callback:callback? =null
-    private var start=true
+     var timer: Timer = Timer()
+     var delay=0L
+     var period=0L
+     var callback:callback? =null
+     var start=true
     init {
         life.addObserver(TestObserver())
     }
